@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática - Análise Combinatória e Probabilidade</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Conteúdo prova de Matemática:</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#principio-fundamental">Analise Combinatória</a></li>
+            <li><a href="#permutacao">Permutação</a></li>
+            <li><a href="#arranjo">Arranjo</a></li>
+            <li><a href="#combinacao">Combinação</a></li>
+            <li><a href="#probabilidade">Probabilidade</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="principio-fundamental">
+            <h2>Análise Combinatória</h2>
+
+            <h3>O que é?</h3>
+            <p>Rramo da matemática que estuda métodos e técnicas para contar o número de agrupamentos possíveis a partir de um conjunto de elementos</p>
+            
+            <h3>Fórmula:</h3>
+            <p class="formula-destaque">Total = n₁ × n₂ × n₃ × ... × nₖ</p>
+        </section>
+
+        <section id="permutacao">
+            <h2>Permutação</h2>
+            
+            <div class="tipo-calculo">
+                <h3>Permutação Simples</h3>
+                <p><strong>Quando usar:</strong> Reordenar TODOS os elementos de um conjunto (ordem importa)</p>
+                <p class="formula-destaque">Pₙ = n!</p>
+                <p><strong>Exemplo:</strong> Anagramas da palavra "AMOR" = 4! = 24</p>
+            </div>
+
+            <div class="tipo-calculo">
+                <h3>Permutação com Repetição</h3>
+                <p><strong>Quando usar:</strong> Quando há elementos repetidos no conjunto</p>
+                <p class="formula-destaque">P<sup>r1</sup><sup>r2</sup><sup>r3</sup>= n! / r1 r2 r3 ...)</p>
+                <p><strong>Exemplo:</strong> Anagramas de "BANANA" = 6! / (3! × 2!) = 60</p>
+            </div>
+        </section>
+
+        <section id="arranjo">
+            <h2>Arranjo</h2>
+            
+            <h3>O que é?</h3>
+            <p>Agrupamentos onde a <strong>ORDEM IMPORTA</strong> e usamos apenas parte dos elementos.</p>
+            
+            <h3>Fórmula do Arranjo Simples:</h3>
+            <p class="formula-destaque">Aₙ,ₚ = n! / (n - p)!</p>
+            
+            <h3>Quando usar:</h3>
+            <ul>
+                <li>Formar números com algarismos distintos</li>
+                <li>Pódio em uma corrida</li>
+                <li>Senhas onde a ordem dos caracteres importa</li>
+            </ul>
+            
+            <h3>Exemplo:</h3>
+            <p>Escolher presidente e vice entre 5 pessoas: A₅,₂ = 5! / (5-2)! = 20</p>
+        </section>
+
+        <section id="combinacao">
+            <h2>Combinação</h2>
+            
+            <h3>O que é?</h3>
+            <p>Agrupamentos onde a <strong>ORDEM NÃO IMPORTA</strong> e usamos apenas parte dos elementos.</p>
+            
+            <h3>Fórmula da Combinação Simples:</h3>
+            <p class="formula-destaque">Cₙ,ₚ = n! / [p! × (n - p)!]</p>
+            
+            <h3>Quando usar:</h3>
+            <ul>
+                <li>Formar comissões</li>
+                <li>Escolher times</li>
+                <li>Combinações de sabores</li>
+                <li>Mãos de baralho</li>
+            </ul>
+            
+            <h3>Exemplo:</h3>
+            <p>Comissão de 3 pessoas entre 8: C₈,₃ = 8! / [3! × (8-3)!] = 56</p>
+            
+            <div class="card-calculo">
+                <h3><strong>Diferença entre Arranjo e Combinação:</strong></h3>
+                <p><strong>Arranjo:</strong> AB ≠ BA (ordem importa)</p>
+                <p><strong>Combinação:</strong> AB = BA (ordem não importa)</p>
+            </div>
+        </section>
+
+        <section id="probabilidade">
+            <h2>Probabilidade</h2>
+            
+            <h3>Probabilidade Básica</h3>
+            <p class="formula-destaque">P(A) = Nº de casos favoráveis / Nº de casos possíveis</p>
+            
+            <h3>Probabilidade da União</h3>
+            <p>Para eventos A e B:</p>
+            <p class="formula-destaque">P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</p>
+            
+            <h3>Probabilidade Condicional</h3>
+            <p>Probabilidade de A ocorrer sabendo que B ocorreu:</p>
+            <p class="formula-destaque">P(A|B) = P(A ∩ B) / P(B)</p>
+            
+            <h3>Eventos Independentes</h3>
+            <p>Quando a ocorrência de um não afeta o outro:</p>
+            <p class="formula-destaque">P(A ∩ B) = P(A) × P(B)</p>
+            
+            <h3>Valores da Probabilidade</h3>
+            <ul>
+                <li>Evento <strong>impossível</strong>: P(A) = 0</li>
+                <li>Evento <strong>certo</strong>: P(A) = 1</li>
+                <li>Qualquer evento: <strong>0 ≤ P(A) ≤ 1</strong></li>
+            </ul>
+        </section>
+    </main>
+    
+    <div class="botoes-navegacao">
+        <a href="index.html" class="proxima-pag-btn">← Voltar (Química)</a>
+        <a href="filosofia.html" class="proxima-pag-btn">Próxima (Filosofia) →</a>
+    </div>
+    
+</body>
+</html>
